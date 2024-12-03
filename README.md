@@ -2,7 +2,6 @@
 
 This repository demonstrates real-time object detection and image classification using a Convolutional Neural Network (CNN) applied to the CIFAR-10 dataset. The project achieves high accuracy and efficient processing times, focusing on deep learning techniques and optimization strategies.
 
-Here is a revised and cleaner version of your Table of Contents, organizing the content appropriately and eliminating redundancy:
 
 ---
 
