@@ -13,7 +13,6 @@ Here is a revised and cleaner version of your Table of Contents, organizing the 
    1.3 Project Objectives  
    1.4 Scope and Limitations  
        1.4.1 Development Methodology  
-       1.4.2 Report Organization  
 
 2. **Background Study and Literature Review**  
    2.1 Background  
@@ -145,3 +144,61 @@ The model chosen for this system is “WaterFall model”. This is a simple proj
 well-defined process and the requirement. The various steps of the waterfall model is followed
 throughout the whole project. This model is understood and incorporate in this project.Very
 less user is involved during the development of these projects. Thus, this system is developed
+![Alt Text](./waterfall_model.png)
+according to the Waterfall model. The various Steps of the Waterfall is shown in figure 1.1
+The "Object Classification Using Light Weight CNN" project can be developed using the waterfall model, which is a sequential and linear approach to software development. The following are the main phases of the waterfall model that can be applied to this project:
+1. Requirements gathering:
+In this phase, the requirements and specifications for the project are gathered and documented.We identify the specific datasets required for this project, including the CIFAR10 dataset required to train and test the CNN model.The training dataset consists of
+50,000 32X32 colour images of 10 different objects. These are the different classes of
+images in the dataset which consist of aeroplane, automobile, bird, cat, deer, dog, frog,
+horse, ship and truck.
+2. Analysis and design:
+In this phase, the requirements are analyzed and a detailed design of the model and user
+interface is developed.We trained the CNN model on the Cifar10 dataset using a machine
+learning development tool called Google Colaboratory and define the user interface .
+3. Coding and Implementation:
+In coding phase, system backend is developed by using python. After this the model and
+3
+user interface are implemented and developed. We trained the model on the CIFAR10
+dataset, built the user interface and integrate the model with the user interface.
+4. Testing:
+In this phase, the model and user interface are tested and validated to ensure they meet
+the specifications and requirements. With CNN, at the end 100 epochs, accuracy was at
+around 98 percent with an average processing time of 48ms/step.
+Chapter 2 Background Study and Literature Review
+2.1 Background
+2.1.1 Deep learning
+Deep learning, a subset of machine learning which in turn is a subset of artificial intelligence
+(AI) has networks capable of learning things from the data that is unstructured or unlabeled.
+The approach utilized in this project is Convolutional Neural Networks (CNN). Deep learning
+is a popular technique used in computer vision[2]. We chose Convolutional Neural Network
+(CNN) layers as building blocks to create our model architecture. CNNs are known to imitate
+how the human brain works when analyzing visuals [3]. A typical architecture of a convolutional neural network contains an input layer, some convolutional layers, some dense layers
+(aka. fully-connected layers), and an output layer. These are linearly stacked layers ordered in
+sequence.
+# 2.1.2 Convolution Neural Network(CNN)
+CNN is a deep learning algorithm that take an input image, assign learnable biases and weights
+to numerous objects in the image and differentiate one from the other. As comparing to other
+classification algorithm, the preprocessing needed in CNN is much lower and are used in object
+detection, plant disease detection, fraud identification and many more.It is like the connectivity
+of neurons pattern in human brain and motivated by the visual cortex organization. A CNN
+model works in three stages. In the first stage, a convolutional layer extracts the features of
+the image/data. In the second stage a pooling layer reduces the dimensionality of the image,
+so small changes do not create a big change on the model. Simply saying, it prevents over
+fitting. In the third stage a flattening layer transforms our model in one-dimension and feeds
+it to the fully connected dense layer. This dense layer then performs prediction of image. A
+good model has multiple layers of convolutional layers and pooling layers.
+2.1.3 Activation functions
+Activation functions are used in the layers of the Convolutional Neural Network (CNN) model
+to introduce non-linearity into the model. This non-linearity allows the model to learn complex
+representations of the input data, which is important for accurate object recognition and prediction.There are several activation functions that can be used in the layers of a CNN model.ReLU
+5
+is used in our project as an activation function.
+1. ReLU (Rectified Linear Unit)
+ReLU is a popular activation function that replaces negative values with zero and leaves
+positive values unchanged [4]. This activation function is computationally efficient and
+has been shown to improve the convergence of the model.ReLU is an important component in the "Object Classification Using CNN". It helps to improve the accuracy of
+predictions, speed up computation time, and provide a non-linear decision boundary for
+the model to learn from.
+
+
