@@ -13,20 +13,12 @@ This repository demonstrates real-time object detection/image classification usi
    1.4 Scope and Limitations  
        1.4.1 Development Methodology  
 
-2. **Background Study and Literature Review**  
+2. **Background Study**  
    2.1 Background  
        2.1.1 Deep Learning  
        2.1.2 Convolution Neural Network (CNN)  
        2.1.3 Activation Functions  
-   2.2 Literature Review  
 
-3. **System Analysis**  
-   3.1 System Analysis  
-       3.1.1 Requirement Analysis  
-       3.1.2 Feasibility Analysis  
-   3.2 Dataset Description  
-   3.3 Analysis  
-       3.3.1 Activity Diagram  
 
 4. **System Design**  
    4.1 CNN Configuration  
@@ -200,41 +192,21 @@ has been shown to improve the convergence of the model.ReLU is an important comp
 predictions, speed up computation time, and provide a non-linear decision boundary for
 the model to learn from.
 ![Alt Text](./relu_graph.png)
-# 2.2 Literature Review
-A literature review of the topic "Object Classification Using CNN" involves exploring the existing research and studies related to each of the components mentioned in the title.
-G. Yao, T. Lei, and J. Zhong [1], “A review of convolutional-neural-network-based action
-recognition,”in their article describe convolutional neural network (CNN) is one of the most
-popular and used of DL networks. Because of CNN, DL is very popular nowadays. The main
-advantage of CNN compared to its predecessors is that it automatically detects the significant
-features without any human supervision which made it the most used. Therefore, we have dug
-in deep with CNN by presenting the main components of it.
-In their paper,S. S. Basha, S. R. Dubey, V. Pulabaigari, and S. Mukherjee [5], have conducted
-extensive experiments to observe the useful practices in deep learning for the usage of Convolutional Neural Networks (CNNs) .The four CNN models are implemented to perform the
-experiments on publicly available CIFAR-10 dataset.In thir paper, they have analyzed the effect of certain decisions in terms of the FC layers of CNN for image classification. Careful
-6
-selection of these decisions not only improves the performance of the CNN models but also
-reduces the time required to choose among different architectures such as deeper and shallow.
-Doon, T. Kumar Rawat, and S. Gautam[6],in their project used a deep neural network to perform image classification on CIFAR-10 dataset. ReLU activation function is used throughout
-the network except at the output layer where Softmax activation function is used. The output
-labels are in the form of integers and need to be changed to categorical using one hot encoding. During training each forward pass results in an output value which is compared with the
-actual output and loss function is computed . Cross-entropy loss function is used along with
-Softmax activation at the output and the gradient of the loss function are propagated back into
-the network to optimize the weights. This process is repeated for fixed number of epochs to
-get best possible accuracy.
-In [7], Training the deep learning models involves learning of the parameters to meet the objective function. Typically the objective is to minimize the loss incurred during the learning
-process. In a supervised mode of learning, a model is given the data samples and their respective outcomes. When a model generates an output, it compares it with the desired output and
-then takes the difference of generated and desired outputs and then attempts to bring the generated output close to the desired output. This is achieved through optimization algorithms. An
-optimization algorithm goes through several cycles until convergence to improve the accuracy
-of the model. There are several types of optimization methods developed to address the challenges associated with the learning process. Six of these have been taken up to be examined
-in this study to gain insights about their intricacies. The methods investigated are stochastic
-gradient descent, nesterov momentum, rmsprop, adam, adagrad, adadelta. Four datasets have
-been selected to perform the experiments which are mnist, fashionmnist, cifar10 and cifar100.
-The optimal training results obtained for mnist is 1.00 with RMSProp and adam at epoch 200,
-fashionmnist is 1.00 with rmsprop and adam at epoch 400, cifar10 is 1.00 with rmsprop at
-epoch 200, cifar100 is 1.00 with adam at epoch 100. The highest testing results are achieved
-with adam for mnist, fashionmnist, cifar10 and cifar100 are 0.9826, 0.9853, 0.9855, 0.9842
-respectively. The analysis of results shows that adam optimization algorithm performs better
-than others at testing phase and rmsprop and adam at training phase
 
-
-
+# 3.2 Dataset Description
+The CIFAR-10 dataset (Canadian Institute for Advanced Research) is a collection of images
+that are commonly used to train machine learning and computer vision algorithms.
+In this project, a CNN model is trained on the CIFAR10 dataset, which is a widely used dataset
+for object recognition and image classification tasks. The CIFAR10 dataset contains 60,000
+32x32 color training images and 10,000 test images, covering 10 classes of objects, such as
+airplanes, cars, birds, and cats[8].
+The training process involves using the input data (the images from the CIFAR10 dataset)[9]
+to adjust the weights and biases of the model so that it can accurately recognize and predict
+the class of an object in an image.
+Once the model is trained, it can be used for real-time object recognition by processing an
+input image and making a prediction based on the learned representations. The user interface
+is used to allow users to input images and receive the predictions made by the model.
+Here are the classes in the dataset , as well as 10 random images from each shown in 3.3:
+The classes are completely mutually exclusive. There is no overlap between automobiles and
+trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big
+trucks. Neither includes pickup trucks.
