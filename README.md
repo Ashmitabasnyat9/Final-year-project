@@ -382,9 +382,18 @@ Home Page for choosing file
 # Files choosen
 ![Alt Text](././filechoosen.png)
 # Prediction
+![Alt Text](././uploadimage.png)
 
 
-
+# 5.3 Limitations:
+The project "Object Classification Using Lightweight CNN" has a limitation where if images
+of objects other than those present in CIFAR10 are inputted, the classification algorithm may
+output names that are similar to those in the CIFAR10 dataset but with lower probability.Here
+we uploaded normal images of a house, a laptop, and a tiger, respectively. However, these
+objects are beyond the scope of our predefined categories, so our model was unable to predict
+their true identity. Instead, the model classified them as objects that look similar to those
+belonging to the CIFAR10 dataset, resulting in incorrect predictions as shown in figures
+![Alt Text](././limitation_images.png)
 
 
 
