@@ -370,6 +370,7 @@ required inputs of the modules are given to it and the output is compared to the
 
 # 4.2.2 System Testing
 
+
 System testing involves evaluating the performance of the web application in terms of uploading, storing, and displaying images.
 Home Page for choosing file
 
@@ -396,6 +397,7 @@ belonging to the CIFAR10 dataset, resulting in incorrect predictions as shown in
 ![Alt Text](./Images/limitation_image2.png)
 
 # 4.4 Result Analysis
+
 We checkout performance analysis for various of Kernel.
 ![Alt Text](./Images/resultkernel.png)
 ![Alt Text](./Images/1kernel.png)
@@ -423,8 +425,7 @@ After training and evaluating the model, the results showed that the architectur
 accuracy of 98 percent on the test set, which is a reasonably good result considering the simplicity of the network. The project also analyzed the training and validation accuracy and loss
 curves and concluded that the model did not suffer from overfitting.
 Overall, the project successfully demonstrated the effectiveness of using lightweight CNN
-architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or
-by exploring other lightweight CNN architectures to improve accuracy further.
+architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or by exploring other lightweight CNN architectures to improve accuracy further.
 
 # 5.3 Snapshots(Obect Detection)
 ![Alt Text](./Images/plane.png)
