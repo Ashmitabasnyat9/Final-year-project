@@ -313,7 +313,7 @@ development tool called Google Colaboratory. Once the model is trained, it can b
 and integrated into the system.
 Next, a real-time object detection component is implemented using the model to classify objects in images.
 Finally, a web-based user interface is developed to allow users to interact with the real-time
-object detection component. The user interface include features a display of the detected ob￾jects, and user controls for adjusting the settings of the real-time object detection component.
+object detection component. The user interface include features a display of the detected objects, and user controls for adjusting the settings of the real-time object detection component.
 Overall, the system implementation of this project involves integrating the trained CNN model
 into a real-time object detection component and developing a user interface to allow users to
 interact with the system in real-time using a web browser.
@@ -322,7 +322,7 @@ interact with the system in real-time using a web browser.
 All the internet connected desktops/laptops.
 2. Software Requirements
 Jupyter Notebook:
-Jupyter notebooks are a popular tool used by data scientists, machine learning engi￾neers, and researchers to create and share code, visualizations, and narrative text. They
+Jupyter notebooks are a popular tool used by data scientists, machine learning engineers, and researchers to create and share code, visualizations, and narrative text. They
 allow you to write and execute code in your web browser and mix it with formatted text,
 equations, and visualizations. Jupyter notebooks support a wide range of programming
 languages, including Python, R, Julia, and many others.
@@ -350,7 +350,7 @@ control over the implementation details of the model.
 The CIFAR-10 dataset in the project,is downloaded and preprocessed in a Google Colab using
 a deep learning framework such as TensorFlow. This preprocessing step included data augmentation techniques and improve the model’s generalization performance. The preprocessed
 data is splited into training and validation sets and fed into the light-weight CNN model for
-training and evaluation.The model is trained at 100 epochs and track how our model is performing after each epoch of training.Finally, we see our model in action by visualizing some
+training and evaluation.The model is trained at 100 epochs and track how our model is performing after each epoch of training.Finally, we see our model in action by visualizing some
 images from the test dataset and checked if our model predicts them correctly.
 
 # 4.2 Testing
