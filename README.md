@@ -209,7 +209,7 @@ The classes are completely mutually exclusive. There is no overlap between autom
 trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big
 trucks. Neither includes pickup trucks.
 
-![Alt Text](./cifar10images.png)
+![Alt Text](././cifar10images.png)
 
 # Chapter 3 System Design
 
@@ -232,7 +232,7 @@ classification. Convolution and max pooling are carried out to extract the featu
 and a 32 3x3 convolution filters are applied to a 28x28 image followed by a max-pooling layer
 of 2x2 pooling size followed by another convolution layer with 64 3x3 filters. A detailed visual
 explanation is shown in Figure 4.1. The typical structure of a CNN consists of three basic layers
-![Alt Text](./CNN_Architecture_model.png)
+![Alt Text](././CNN_Architecture_model.png)
 # 1. Convolutional Layer:
 Convolutional layers are the major building blocks used in convolutional neural net￾works. A convolution is the simple application of a filter to an input that results in anactivation. We have used sequential model and used 2D convolution with 3,3 kernel
 with 32 filters. MaxPooling method is used for downsizing the dimensions with relu
@@ -251,7 +251,7 @@ the first convolutional layer. This layer reduces the spatial size of the featur
 factor of 2 in both dimensions.
 To reduce the dimensions of the hidden layer by combining the outputs of neuron clusters at the previous layer into a single neuron in the next layer.
 There are two types of pooling that are used:
-![Alt Text](./Pooling_layer.png)
+![Alt Text](././Pooling_layer.png)
 (a) Max pooling:
 This works by selecting the maximum value from every pool. Max Pooling retains
 the most prominent features of the feature map, and the returned image is sharper
@@ -263,13 +263,13 @@ A fully connected layer refers to a neural network in which each neuron applies 
 transformation to the input vector through a weights matrix. As a result, all possible
 connections layer-to-layer are present, meaning every input of the input vector influences
 every output of the output vector.
-![Alt Text](./Fully_Connected_Layer.png)
+![Alt Text](././Fully_Connected_Layer.png)
 
 Summary of the model is shown in the table 
-![Alt Text](./CNN_DETAILS.png)
+![Alt Text](././CNN_DETAILS.png)
 # 3.2 System Workflow
 Figure 4.4 shows the block diagram for "Object Classification Using light weight CNN
-![Alt Text](./System_workflow.png)
+![Alt Text](././System_workflow.png)
 
 # 3.3 Algorithm Details
 In the project the CNN architecture consists of two convolutional layers, each followed by a
@@ -367,20 +367,20 @@ can be define as the testing process where each unit or modules are tested indiv
 required inputs of the modules are given to it and the output is compared to the expected.
 1. Test case 1: Upload image
 2. Test Case 2: Detection of Objects
-![Alt Text](./Testing_uploading_image.png)
+![Alt Text](././Testing_uploading_image.png)
 
-![Alt Text](./Test_Detecting_image.png)
+![Alt Text](././Test_Detecting_image.png)
 
 # 4.2.2 System Testing
 
 System testing involves evaluating the performance of the web application in terms of uploading, storing, and displaying images.
 Home Page for choosing file
-![Alt Text](./Homepage.png)
+![Alt Text](././Homepage.png)
 
 # Choosing File
-![Alt Text](./chooseimage.png)
+![Alt Text](././chooseimage.png)
 # Files choosen
-![Alt Text](./filechoosen.png)
+![Alt Text](././filechoosen.png)
 # Prediction
 
 
