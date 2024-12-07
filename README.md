@@ -324,7 +324,7 @@ Jupyter notebooks are a popular tool used by data scientists, machine learning e
 allow you to write and execute code in your web browser and mix it with formatted text,
 equations, and visualizations. Jupyter notebooks support a wide range of programming
 languages, including Python, R, Julia, and many others.
-Google Colab is a free Jupyter notebook that allows to run Python in the browser with￾out the need for complex configuration.
+Google Colab is a free Jupyter notebook that allows to run Python in the browser without the need for complex configuration.
 Google Collaboratory:
 Google Colab (short for "Google Colaboratory") is a web-based platform that allows
 users to run Jupyter notebooks in a cloud-based environment. It is a free service provided
@@ -340,7 +340,7 @@ Tensor Flow:
 TensorFlow is a popular deep learning framework used for building and training machine learning models. In particular,TensorFlow has extensive support for building and
 training convolutional neural networks (CNNs) which are commonly used for image
 classification tasks, such as the CIFAR-10 dataset.
-TensorFlow provides a high-level API called Keras which simplifies the process of building neural networks. Keras allows developers to create a neural network model with just
+TensorFlow provides a high-level API called Keras which simplifies the process of building neural networks. Keras allows developers to create a neural network model with just
 a few lines of code, making it an excellent tool for building and prototyping models.
 Additionally, TensorFlow provides a low-level API that enables users to have greater
 control over the implementation details of the model.
@@ -352,7 +352,7 @@ training and evaluation.The model is trained at 100 epochs and track how our mod
 images from the test dataset and checked if our model predicts them correctly.
 
 # 4.2 Testing
-Testing is a method to check whether the actual software product matches expected require￾ments and to ensure that software product is Defect free. Testing is a very important phase of
+Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free. Testing is a very important phase of
 system development. It is a phase in the software testing cycle where a total and integrated
 application is tested. The scope of system testing is not only limited to the design of the system
 but also to the behavior and believed expectations of the business. There are different types of
@@ -409,18 +409,18 @@ this model as our final one.
 # 5.1 Future Recommendations
 Here are some future recommendations for the project "Object Classification Using Lightweight
 CNN ":
-1. Use Data Augmentation: One way to improve the model’s accuracy is to use data augmentation techniques such as rotation, flipping, and zooming of images. This technique
+1. Use Data Augmentation: One way to improve the model’s accuracy is to use data augmentation techniques such as rotation, flipping, and zooming of images. This technique
 can help the model learn more robust features and reduce overfitting.
 2. Test on Larger Datasets: While the Cifar10 dataset is useful for testing lightweight
 models, it would be interesting to test the model on larger datasets such as Cifar100,
 ImageNet, or COCO. This would provide a better understanding of the model’s ability
 to generalize to different datasets and identify objects in more complex scenes.
 # 5.2 Conclusion
-The project "Object Classification Using Lightweight CNN " aimed to develop a deep learning model for classifying objects in images using the Cifar10 dataset. The project used a
+The project "Object Classification Using Lightweight CNN " aimed to develop a deep learning model for classifying objects in images using the Cifar10 dataset. The project used a
 lightweight convolutional neural network (CNN) architecture and trained it on the Cifar10
 dataset, which contains 60,000 32x32 color images in 10 classes.
 After training and evaluating the model, the results showed that the architecture achieved an
-accuracy of 98 percent on the test set, which is a reasonably good result considering the simplicity of the network. The project also analyzed the training and validation accuracy and loss
+accuracy of 98 percent on the test set, which is a reasonably good result considering the simplicity of the network. The project also analyzed the training and validation accuracy and loss
 curves and concluded that the model did not suffer from overfitting.
 Overall, the project successfully demonstrated the effectiveness of using lightweight CNN
 architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or
