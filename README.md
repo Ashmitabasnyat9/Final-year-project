@@ -24,9 +24,7 @@ This repository demonstrates real-time object detection/image classification usi
 3. **System Design**  
    3.1 CNN Configuration  
    3.2 System Workflow  
-   3.3 Modular Decomposition  
-   3.4 Component-Level Design  
-       3.4.1 Algorithm Details  
+   3.3 Algorithm Details  
 
 5. **Implementation and Testing**  
    5.1 Implementation  
@@ -272,6 +270,37 @@ Summary of the model is shown in the table
 # 3.2 System Workflow
 Figure 4.4 shows the block diagram for "Object Classification Using light weight CNN
 ![Alt Text](./System_workflow.png)
+
+# 3.3 Algorithm Details
+In the project the CNN architecture consists of two convolutional layers, each followed by a
+max pooling layer, and two dense layers at the end. The input data has shape (32,32,3), where
+32x32 represents the size of the image and 3 represents the number of color channels (RGB).
+Mathematically, the convolution operation can be expressed as:
+Z[i, j] = (W ∗ X)[i, j] + b (
+Where Z is the output feature map, W is the filter matrix, X is the input image, b is a bias
+term, and * denotes the convolution operation. The filter matrix W is learned during training
+using backpropagation, and the bias term b is a scalar value that is added to each element of
+the output feature map.
+The activation function used in this layer is ’relu’ (Rectified Linear Unit), which introduces
+non-linearity to the model. The relu activation function is defined as
+f(x) = max(0, x) 
+which means that if the input to the activation function is negative, it will output 0, and if it is
+positive, it will output the same value.
+The ’relu’ activation function is used after this convolutional layer. Another max pooling layer
+with a pool size of (2,2) is then applied, resulting in an output with dimensions (6,6,64).
+After the second pooling layer, a flatten layer is applied to convert the 3D output into a 1D
+vector. This 1D vector is then passed through two dense layers. The first dense layer has 64
+neurons with ’relu’ activation, and the second dense layer has 10 neurons with ’softmax’ activation. The softmax function is used to produce a probability distribution over the 10 possible
+classes in the CIFAR-10 dataset.
+The CNN is compiled using the ’adam’ optimizer, loss function, and ’accuracy’ metric. During training, the model is trained for 100 epochs, and the training data is divided into batches
+of 32 samples each.
+During the training process, the CNN learns to adjust the values of the weights in each layer
+so as to minimize the loss function. The optimization algorithm (in this case, Adam) uses
+backpropagation to calculate the gradients of the loss function with respect to the weights, and
+updates the weights accordingly.
+With CNN, at the end 100 epochs, accuracy was at around 98 percentage with an average processing time of 48ms/step. CNN’s are best for image classification and gives superb accuracy.
+Also computation is much less compared to simple ANN as maxpooling reduces the image
+dimensions while still preserving the features.
 
 
 
