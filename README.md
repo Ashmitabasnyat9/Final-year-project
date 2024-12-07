@@ -38,23 +38,21 @@ This repository demonstrates real-time object detection/image classification usi
 
 5. **Future Recommendations and Conclusion**  
    5.1 Future Recommendations  
-   5.2 Conclusion  
+   5.2 Conclusion
+   5.3 Snapshot(Object Detection)
 
 
 ---
 
 **List of Figures**  
 1.1 Waterfall Model  
-2.1 ReLU Graph  
-3.1 Use Case Diagram  
-3.2 Gantt Chart of Scheduled Feasibility  
+2.1 ReLU Graph   
 3.3 CIFAR-10 Dataset Examples  
 3.4 Activity Diagram  
 4.1 Detailed Architecture of CNN Model  
 4.2 Types of Pooling Layers  
 4.3 Fully Connected Layer  
 4.4 Block Diagram of Object Detection System  
-4.5 Sequence Diagram  
 5.1 Home Page for Choosing Files  
 5.2 File Upload Page  
 5.3 Prediction Results  
@@ -428,7 +426,7 @@ Overall, the project successfully demonstrated the effectiveness of using lightw
 architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or
 by exploring other lightweight CNN architectures to improve accuracy further.
 
-#snapshots/obect_Detection
+# 5.3 Snapshots(Obect Detection)
 ![Alt Text](./Images/plane.png)
 ![Alt Text](./Images/frog.png)
 ![Alt Text](./Images/car.png)
