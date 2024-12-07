@@ -367,7 +367,7 @@ can be define as the testing process where each unit or modules are tested indiv
 required inputs of the modules are given to it and the output is compared to the expected.
 1. Test case 1: Upload image
 2. Test Case 2: Detection of Objects
-![Alt Text](./Test_uploading_image.png)
+![Alt Text](./Testing_uploading_image.png)
 
 ![Alt Text](./Test_Detecting_image.png)
 
