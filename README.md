@@ -31,8 +31,8 @@ This repository demonstrates real-time object detection/image classification usi
        4.1.1 Implementation Tools  
        4.1.2 Implementation Details  
    4.2 Testing  
-       5.2.1 Unit Testing  
-       5.2.2 System Testing  
+       4.2.1 Unit Testing  
+       4.2.2 System Testing  
    4.3 Limitations  
    4.4 Result Analysis  
 
@@ -367,6 +367,15 @@ can be define as the testing process where each unit or modules are tested indiv
 required inputs of the modules are given to it and the output is compared to the expected.
 1. Test case 1: Upload image
 2. Test Case 2: Detection of Objects
+![Alt Text](./Test_uploading_image.png)
+
+![Alt Text](./Test_Detecting_image.png)
+
+4.2.2 System Testing
+System testing involves evaluating the performance of the web application in terms of uploading, storing, and displaying images.
+Home Page for choosing file
+![Alt Text](./Homepage.png)
+
 
 
 
