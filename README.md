@@ -213,8 +213,10 @@ trucks. Neither includes pickup trucks.
 
 ![Alt Text](./cifar10images.png)
 
-Chapter 4 System Design
+# Chapter 4 System Design
+
 4.1 CNN Configuration
+
 In simpler words, CNN is an artificial neural network that specializes in picking out or detect
 patterns and make sense of them. Thus, CNN has been most useful for image classification.
 A CNN model has various types of filters of different sizes and numbers. These filters are
@@ -232,5 +234,7 @@ classification. Convolution and max pooling are carried out to extract the featu
 and a 32 3x3 convolution filters are applied to a 28x28 image followed by a max-pooling layer
 of 2x2 pooling size followed by another convolution layer with 64 3x3 filters. A detailed visual
 explanation is shown in Figure 4.1. The typical structure of a CNN consists of three basic
+![Alt Text](./CNN Architecture model.png)
+
 
 
