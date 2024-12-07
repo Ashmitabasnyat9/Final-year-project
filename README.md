@@ -358,7 +358,7 @@ Testing is a method to check whether the actual software product matches expecte
 system development. It is a phase in the software testing cycle where a total and integrated
 application is tested. The scope of system testing is not only limited to the design of the system
 but also to the behavior and believed expectations of the business. There are different types of
-the testing. Thus, Testing is performed in order to meet the conditions, designing and executing of project and for checking results and reporting on the System process and performance.
+the testing. Thus, Testing is performed in order to meet the conditions, designing and executing of project and for checking results and reporting on the System process and performance.
 # 4.2.1 Unit Testing
 A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated
 in a system. A unit testing is done during development of this system. In short Unit testing
