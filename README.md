@@ -408,7 +408,7 @@ achieved the highest accuracy with 98 percentage at 3x3 kernel size. Therefore, 
 this model as our final one.
 
 # Chapter 5 Future Recommendation and Conclusion
-5.1 Future Recommendations
+# 5.1 Future Recommendations
 Here are some future recommendations for the project "Object Classification Using Lightweight
 CNN ":
 1. Use Data Augmentation: One way to improve the model’s accuracy is to use data augmentation techniques such as rotation, flipping, and zooming of images. This technique
@@ -417,7 +417,7 @@ can help the model learn more robust features and reduce overfitting.
 models, it would be interesting to test the model on larger datasets such as Cifar100,
 ImageNet, or COCO. This would provide a better understanding of the model’s ability
 to generalize to different datasets and identify objects in more complex scenes.
-5.2 Conclusion
+# 5.2 Conclusion
 The project "Object Classification Using Lightweight CNN " aimed to develop a deep learning model for classifying objects in images using the Cifar10 dataset. The project used a
 lightweight convolutional neural network (CNN) architecture and trained it on the Cifar10
 dataset, which contains 60,000 32x32 color images in 10 classes.
@@ -427,6 +427,13 @@ curves and concluded that the model did not suffer from overfitting.
 Overall, the project successfully demonstrated the effectiveness of using lightweight CNN
 architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or
 by exploring other lightweight CNN architectures to improve accuracy further.
+
+#snapshots/obect_Detection
+![Alt Text](./Images/plane.png)
+![Alt Text](./Images/frog.png)
+![Alt Text](./Images/car.png)
+
+
 
 
 
