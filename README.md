@@ -30,11 +30,11 @@ This repository demonstrates real-time object detection/image classification usi
    4.1 Implementation  
        4.1.1 Implementation Tools  
        4.1.2 Implementation Details  
-   5.2 Testing  
+   4.2 Testing  
        5.2.1 Unit Testing  
        5.2.2 System Testing  
-   5.3 Limitations  
-   5.4 Result Analysis  
+   4.3 Limitations  
+   4.4 Result Analysis  
 
 6. **Future Recommendations and Conclusion**  
    6.1 Future Recommendations  
@@ -293,15 +293,15 @@ The ’relu’ activation function is used after this convolutional layer. Anoth
 with a pool size of (2,2) is then applied, resulting in an output with dimensions (6,6,64).
 After the second pooling layer, a flatten layer is applied to convert the 3D output into a 1D
 vector. This 1D vector is then passed through two dense layers. The first dense layer has 64
-neurons with ’relu’ activation, and the second dense layer has 10 neurons with ’softmax’ activation. The softmax function is used to produce a probability distribution over the 10 possible
+neurons with ’relu’ activation, and the second dense layer has 10 neurons with ’softmax’ activation. The softmax function is used to produce a probability distribution over the 10 possible
 classes in the CIFAR-10 dataset.
-The CNN is compiled using the ’adam’ optimizer, loss function, and ’accuracy’ metric. During training, the model is trained for 100 epochs, and the training data is divided into batches
+The CNN is compiled using the ’adam’ optimizer, loss function, and ’accuracy’ metric. During training, the model is trained for 100 epochs, and the training data is divided into batches
 of 32 samples each.
 During the training process, the CNN learns to adjust the values of the weights in each layer
 so as to minimize the loss function. The optimization algorithm (in this case, Adam) uses
 backpropagation to calculate the gradients of the loss function with respect to the weights, and
 updates the weights accordingly.
-With CNN, at the end 100 epochs, accuracy was at around 98 percentage with an average processing time of 48ms/step. CNN’s are best for image classification and gives superb accuracy.
+With CNN, at the end 100 epochs, accuracy was at around 98 percentage with an average processing time of 48ms/step. CNN’s are best for image classification and gives superb accuracy.
 Also computation is much less compared to simple ANN as maxpooling reduces the image
 dimensions while still preserving the features.
 
@@ -312,7 +312,7 @@ involves several components.
 First, the lightweight CNN model is trained on the Cifar10 dataset using a machine learning
 development tool called Google Colaboratory. Once the model is trained, it can be exported
 and integrated into the system.
-Next, a real-time object detection component is implemented using the model to classify ob￾jects in images.
+Next, a real-time object detection component is implemented using the model to classify objects in images.
 Finally, a web-based user interface is developed to allow users to interact with the real-time
 object detection component. The user interface include features a display of the detected ob￾jects, and user controls for adjusting the settings of the real-time object detection component.
 Overall, the system implementation of this project involves integrating the trained CNN model
@@ -332,7 +332,7 @@ Google Collaboratory:
 Google Colab (short for "Google Colaboratory") is a web-based platform that allows
 users to run Jupyter notebooks in a cloud-based environment. It is a free service provided
 by Google that enables users to write and execute Python code in their web browser,
-without having to install any software or configure any environment on their local machine.
+without having to install any software or configure any environment on their local machine.
 In the project "Object Classification Using Light Weight CNNS", the Google Collab is
 used to create, train and test the machine learning model using the CIFAR-10 dataset.
 The lightweight CNN model is implemented using a deep learning framework such as
@@ -340,7 +340,7 @@ TensorFlow. The collab also contained the code to preprocess the dataset, visual
 model’s performance.
 3. Library
 Tensor Flow:
-TensorFlow is a popular deep learning framework used for building and training machine learning models. In particular,TensorFlow has extensive support for building and
+TensorFlow is a popular deep learning framework used for building and training machine learning models. In particular,TensorFlow has extensive support for building and
 training convolutional neural networks (CNNs) which are commonly used for image
 classification tasks, such as the CIFAR-10 dataset.
 TensorFlow provides a high-level API called Keras which simplifies the process of building neural networks. Keras allows developers to create a neural network model with just
@@ -353,6 +353,22 @@ a deep learning framework such as TensorFlow. This preprocessing step included d
 data is splited into training and validation sets and fed into the light-weight CNN model for
 training and evaluation.The model is trained at 100 epochs and track how our model is performing after each epoch of training.Finally, we see our model in action by visualizing some
 images from the test dataset and checked if our model predicts them correctly.
+
+# 4.2 Testing
+Testing is a method to check whether the actual software product matches expected require￾ments and to ensure that software product is Defect free. Testing is a very important phase of
+system development. It is a phase in the software testing cycle where a total and integrated
+application is tested. The scope of system testing is not only limited to the design of the system
+but also to the behavior and believed expectations of the business. There are different types of
+the testing. Thus, Testing is performed in order to meet the conditions, designing and executing of project and for checking results and reporting on the System process and performance.
+# 4.2.1 Unit Testing
+A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated
+in a system. A unit testing is done during development of this system. In short Unit testing
+can be define as the testing process where each unit or modules are tested individually. The
+required inputs of the modules are given to it and the output is compared to the expected.
+1. Test case 1: Upload image
+2. Test Case 2: Detection of Objects
+
+
 
 
 
