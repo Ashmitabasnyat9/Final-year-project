@@ -40,7 +40,6 @@ This repository demonstrates real-time object detection/image classification usi
    6.1 Future Recommendations  
    6.2 Conclusion  
 
-7. **References**
 
 ---
 
@@ -385,7 +384,7 @@ Home Page for choosing file
 ![Alt Text](././uploadimage.png)
 
 
-# 5.3 Limitations:
+# 4.3 Limitations:
 The project "Object Classification Using Lightweight CNN" has a limitation where if images
 of objects other than those present in CIFAR10 are inputted, the classification algorithm may
 output names that are similar to those in the CIFAR10 dataset but with lower probability.Here
@@ -394,6 +393,11 @@ objects are beyond the scope of our predefined categories, so our model was unab
 their true identity. Instead, the model classified them as objects that look similar to those
 belonging to the CIFAR10 dataset, resulting in incorrect predictions as shown in figures
 ![Alt Text](././limitation_images.png)
+
+![Alt Text](././lmitation_image2.png)
+
+4.4 Result Analysis
+We checkout performance analysis for various of Kernel.
 
 
 
