@@ -26,10 +26,10 @@ This repository demonstrates real-time object detection/image classification usi
    3.2 System Workflow  
    3.3 Algorithm Details  
 
-5. **Implementation and Testing**  
-   5.1 Implementation  
-       5.1.1 Implementation Tools  
-       5.1.2 Implementation Details  
+4. **Implementation and Testing**  
+   4.1 Implementation  
+       4.1.1 Implementation Tools  
+       4.1.2 Implementation Details  
    5.2 Testing  
        5.2.1 Unit Testing  
        5.2.2 System Testing  
@@ -276,14 +276,17 @@ In the project the CNN architecture consists of two convolutional layers, each f
 max pooling layer, and two dense layers at the end. The input data has shape (32,32,3), where
 32x32 represents the size of the image and 3 represents the number of color channels (RGB).
 Mathematically, the convolution operation can be expressed as:
-Z[i, j] = (W ∗ X)[i, j] + b (
+Z[i, j] = (W ∗ X)[i, j] + b
+
 Where Z is the output feature map, W is the filter matrix, X is the input image, b is a bias
 term, and * denotes the convolution operation. The filter matrix W is learned during training
 using backpropagation, and the bias term b is a scalar value that is added to each element of
 the output feature map.
 The activation function used in this layer is ’relu’ (Rectified Linear Unit), which introduces
 non-linearity to the model. The relu activation function is defined as
+
 f(x) = max(0, x) 
+
 which means that if the input to the activation function is negative, it will output 0, and if it is
 positive, it will output the same value.
 The ’relu’ activation function is used after this convolutional layer. Another max pooling layer
@@ -301,6 +304,55 @@ updates the weights accordingly.
 With CNN, at the end 100 epochs, accuracy was at around 98 percentage with an average processing time of 48ms/step. CNN’s are best for image classification and gives superb accuracy.
 Also computation is much less compared to simple ANN as maxpooling reduces the image
 dimensions while still preserving the features.
+
+# Chapter 4 Implementation and Testing
+# 4.1 Implementation
+The system implementation of the project "Object Classification Using Light Weight CNN"
+involves several components.
+First, the lightweight CNN model is trained on the Cifar10 dataset using a machine learning
+development tool called Google Colaboratory. Once the model is trained, it can be exported
+and integrated into the system.
+Next, a real-time object detection component is implemented using the model to classify ob￾jects in images.
+Finally, a web-based user interface is developed to allow users to interact with the real-time
+object detection component. The user interface include features a display of the detected ob￾jects, and user controls for adjusting the settings of the real-time object detection component.
+Overall, the system implementation of this project involves integrating the trained CNN model
+into a real-time object detection component and developing a user interface to allow users to
+interact with the system in real-time using a web browser.
+# 4.1.1 Implementation Tools
+1. Hardware Requirements
+All the internet connected desktops/laptops.
+2. Software Requirements
+Jupyter Notebook:
+Jupyter notebooks are a popular tool used by data scientists, machine learning engi￾neers, and researchers to create and share code, visualizations, and narrative text. They
+allow you to write and execute code in your web browser and mix it with formatted text,
+equations, and visualizations. Jupyter notebooks support a wide range of programming
+languages, including Python, R, Julia, and many others.
+Google Colab is a free Jupyter notebook that allows to run Python in the browser with￾out the need for complex configuration.
+Google Collaboratory:
+Google Colab (short for "Google Colaboratory") is a web-based platform that allows
+users to run Jupyter notebooks in a cloud-based environment. It is a free service provided
+by Google that enables users to write and execute Python code in their web browser,
+without having to install any software or configure any environment on their local machine.
+In the project "Object Classification Using Light Weight CNNS", the Google Collab is
+used to create, train and test the machine learning model using the CIFAR-10 dataset.
+The lightweight CNN model is implemented using a deep learning framework such as
+TensorFlow. The collab also contained the code to preprocess the dataset, visualize the
+model’s performance.
+3. Library
+Tensor Flow:
+TensorFlow is a popular deep learning framework used for building and training machine learning models. In particular,TensorFlow has extensive support for building and
+training convolutional neural networks (CNNs) which are commonly used for image
+classification tasks, such as the CIFAR-10 dataset.
+TensorFlow provides a high-level API called Keras which simplifies the process of building neural networks. Keras allows developers to create a neural network model with just
+a few lines of code, making it an excellent tool for building and prototyping models.
+Additionally, TensorFlow provides a low-level API that enables users to have greater
+control over the implementation details of the model.
+# 4.1.2 Implementation Details
+The CIFAR-10 dataset in the project,is downloaded and preprocessed in a Google Colab using
+a deep learning framework such as TensorFlow. This preprocessing step included data augmentation techniques and improve the model’s generalization performance. The preprocessed
+data is splited into training and validation sets and fed into the light-weight CNN model for
+training and evaluation.The model is trained at 100 epochs and track how our model is performing after each epoch of training.Finally, we see our model in action by visualizing some
+images from the test dataset and checked if our model predicts them correctly.
 
 
 
