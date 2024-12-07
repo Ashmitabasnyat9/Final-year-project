@@ -210,3 +210,27 @@ Here are the classes in the dataset , as well as 10 random images from each show
 The classes are completely mutually exclusive. There is no overlap between automobiles and
 trucks. "Automobile" includes sedans, SUVs, things of that sort. "Truck" includes only big
 trucks. Neither includes pickup trucks.
+
+![Alt Text](./cifar10images.png)
+
+Chapter 4 System Design
+4.1 CNN Configuration
+In simpler words, CNN is an artificial neural network that specializes in picking out or detect
+patterns and make sense of them. Thus, CNN has been most useful for image classification.
+A CNN model has various types of filters of different sizes and numbers. These filters are
+essentially what helps us in detecting the pattern.
+The convolutional neural network, or CNN for short, is a specialized type of neural network
+model designed for working with two-dimensional image data, although they can be used with
+one-dimensional and three-dimensional data. Central to the convolutional neural network is
+the convolutional layer that gives the network its name. This layer performs an operation
+called a “convolution”. A CNN model generally consists of convolutional and pooling layers.
+It works better for data that are represented as grid structures, this is the reason why CNN
+works well for image classification problems.
+The dropout layer is used to deactivate some of the neurons and while training, it reduces over
+fitting of the model. Our model is composed of feature extraction with convolution and binary
+classification. Convolution and max pooling are carried out to extract the features in the image,
+and a 32 3x3 convolution filters are applied to a 28x28 image followed by a max-pooling layer
+of 2x2 pooling size followed by another convolution layer with 64 3x3 filters. A detailed visual
+explanation is shown in Figure 4.1. The typical structure of a CNN consists of three basic
+
+
