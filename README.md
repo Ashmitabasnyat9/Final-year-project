@@ -17,15 +17,16 @@ This repository demonstrates real-time object detection/image classification usi
    2.1 Background  
        2.1.1 Deep Learning  
        2.1.2 Convolution Neural Network (CNN)  
-       2.1.3 Activation Functions  
+       2.1.3 Activation Functions
+       2.1.4 Dataset Description 
 
 
-4. **System Design**  
-   4.1 CNN Configuration  
-   4.2 System Workflow  
-   4.3 Modular Decomposition  
-   4.4 Component-Level Design  
-       4.4.1 Algorithm Details  
+3. **System Design**  
+   3.1 CNN Configuration  
+   3.2 System Workflow  
+   3.3 Modular Decomposition  
+   3.4 Component-Level Design  
+       3.4.1 Algorithm Details  
 
 5. **Implementation and Testing**  
    5.1 Implementation  
@@ -77,7 +78,7 @@ This repository demonstrates real-time object detection/image classification usi
 
 ---
 # Chapter 1 Introduction
-1.1 Introduction
+# 1.1 Introduction
 
 In the recent years, there has been an exponential progress in the field of machine learning and
 artificial intelligence which has led to improvement in accuracy, reduction in human efforts
@@ -130,6 +131,7 @@ different from those in the CIFAR10 dataset, leading to lower accuracy and predi
 errors.
 3. The model may not generalize well to other datasets and real-world scenarios, requiring
 further fine-tuning or transfer learning techniques to adapt to new environments.
+
 # 1.4.1 Development Methodology
 The model chosen for this system is “WaterFall model”. This is a simple project with the
 well-defined process and the requirement. The various steps of the waterfall model is followed
@@ -156,9 +158,9 @@ dataset, built the user interface and integrate the model with the user interfac
 In this phase, the model and user interface are tested and validated to ensure they meet
 the specifications and requirements. With CNN, at the end 100 epochs, accuracy was at
 around 98 percent with an average processing time of 48ms/step.
-Chapter 2 Background Study and Literature Review
-2.1 Background
-2.1.1 Deep learning
+# Chapter 2 Background Study 
+# 2.1 Background
+# 2.1.1 Deep learning
 Deep learning, a subset of machine learning which in turn is a subset of artificial intelligence
 (AI) has networks capable of learning things from the data that is unstructured or unlabeled.
 The approach utilized in this project is Convolutional Neural Networks (CNN). Deep learning
@@ -179,12 +181,10 @@ so small changes do not create a big change on the model. Simply saying, it prev
 fitting. In the third stage a flattening layer transforms our model in one-dimension and feeds
 it to the fully connected dense layer. This dense layer then performs prediction of image. A
 good model has multiple layers of convolutional layers and pooling layers.
-2.1.3 Activation functions
+# 2.1.3 Activation functions
 Activation functions are used in the layers of the Convolutional Neural Network (CNN) model
 to introduce non-linearity into the model. This non-linearity allows the model to learn complex
-representations of the input data, which is important for accurate object recognition and prediction.There are several activation functions that can be used in the layers of a CNN model.ReLU
-5
-is used in our project as an activation function.
+representations of the input data, which is important for accurate object recognition and prediction.There are several activation functions that can be used in the layers of a CNN model.ReLU is used in our project as an activation function.
 1. ReLU (Rectified Linear Unit)
 ReLU is a popular activation function that replaces negative values with zero and leaves
 positive values unchanged [4]. This activation function is computationally efficient and
@@ -193,14 +193,14 @@ predictions, speed up computation time, and provide a non-linear decision bounda
 the model to learn from.
 ![Alt Text](./relu_graph.png)
 
-# 3.2 Dataset Description
+# 2.1.4 Dataset Description
 The CIFAR-10 dataset (Canadian Institute for Advanced Research) is a collection of images
 that are commonly used to train machine learning and computer vision algorithms.
 In this project, a CNN model is trained on the CIFAR10 dataset, which is a widely used dataset
 for object recognition and image classification tasks. The CIFAR10 dataset contains 60,000
 32x32 color training images and 10,000 test images, covering 10 classes of objects, such as
-airplanes, cars, birds, and cats[8].
-The training process involves using the input data (the images from the CIFAR10 dataset)[9]
+airplanes, cars, birds, and cats.
+The training process involves using the input data (the images from the CIFAR10 dataset)
 to adjust the weights and biases of the model so that it can accurately recognize and predict
 the class of an object in an image.
 Once the model is trained, it can be used for real-time object recognition by processing an
@@ -213,9 +213,9 @@ trucks. Neither includes pickup trucks.
 
 ![Alt Text](./cifar10images.png)
 
-# Chapter 4 System Design
+# Chapter 3 System Design
 
-4.1 CNN Configuration
+# 3.1 CNN Configuration
 
 In simpler words, CNN is an artificial neural network that specializes in picking out or detect
 patterns and make sense of them. Thus, CNN has been most useful for image classification.
@@ -233,8 +233,48 @@ fitting of the model. Our model is composed of feature extraction with convoluti
 classification. Convolution and max pooling are carried out to extract the features in the image,
 and a 32 3x3 convolution filters are applied to a 28x28 image followed by a max-pooling layer
 of 2x2 pooling size followed by another convolution layer with 64 3x3 filters. A detailed visual
-explanation is shown in Figure 4.1. The typical structure of a CNN consists of three basic
-![Alt Text](./CNN Architecture model.png)
+explanation is shown in Figure 4.1. The typical structure of a CNN consists of three basic layers
+![Alt Text](./CNN_Architecture_model.png)
+# 1. Convolutional Layer:
+Convolutional layers are the major building blocks used in convolutional neural net￾works. A convolution is the simple application of a filter to an input that results in anactivation. We have used sequential model and used 2D convolution with 3,3 kernel
+with 32 filters. MaxPooling method is used for downsizing the dimensions with relu
+activation function.We have used output layer with ‘softmax’ activation function.Model
+is again compiled with optimizer ‘adam’.The result is highly specific features that can
+be detected anywhere on input images.We tested our model with different kernel sizes,
+including 1x1, 3x3, and 5x5. We found that the model achieved the best accuracy with
+a 3x3 kernel size.
+The numerical results of the network on the CIFAR-10 dataset are reported. We achieved
+an accuracy of 98 percent on the test set, which is a good performance for this dataset.
+# 2. Pooling Layer:
+Pooling layers are one of the building blocks of Convolutional Neural Networks. Where
+Convolutional layers extract features from images.
+In this project we used a max-pooling layer with a size of 2x2 and a stride of 2 after
+the first convolutional layer. This layer reduces the spatial size of the feature maps by a
+factor of 2 in both dimensions.
+To reduce the dimensions of the hidden layer by combining the outputs of neuron clusters at the previous layer into a single neuron in the next layer.
+There are two types of pooling that are used:
+![Alt Text](./Pooling_layer.png)
+(a) Max pooling:
+This works by selecting the maximum value from every pool. Max Pooling retains
+the most prominent features of the feature map, and the returned image is sharper
+than the original image.
+(b) Average pooling: This pooling layer works by getting the average of the pool. Average pooling retains the average values of features of the feature map. It smooths
+the image while keeping the essence of the feature in an image.
+# 3. Fully Connected Layer
+A fully connected layer refers to a neural network in which each neuron applies a linear
+transformation to the input vector through a weights matrix. As a result, all possible
+connections layer-to-layer are present, meaning every input of the input vector influences
+every output of the output vector.
+![Alt Text](./Fully_Connected_Layer.png)
+
+Summary of the model is shown in the table 
+![Alt Text](./CNN_DETAILS.png)
+# 3.2 System Workflow
+Figure 4.4 shows the block diagram for "Object Classification Using light weight CNN
+![Alt Text](./System_workflow.png)
+
+
+
 
 
 
