@@ -36,9 +36,9 @@ This repository demonstrates real-time object detection/image classification usi
    4.3 Limitations  
    4.4 Result Analysis  
 
-6. **Future Recommendations and Conclusion**  
-   6.1 Future Recommendations  
-   6.2 Conclusion  
+5. **Future Recommendations and Conclusion**  
+   5.1 Future Recommendations  
+   5.2 Conclusion  
 
 
 ---
@@ -374,6 +374,7 @@ required inputs of the modules are given to it and the output is compared to the
 
 System testing involves evaluating the performance of the web application in terms of uploading, storing, and displaying images.
 Home Page for choosing file
+
 ![Alt Text](./Images/Homepage.png)
 
 # Choosing File
@@ -394,10 +395,40 @@ their true identity. Instead, the model classified them as objects that look sim
 belonging to the CIFAR10 dataset, resulting in incorrect predictions as shown in figures
 ![Alt Text](./Images/limitation_images.png)
 
-![Alt Text](./Images/lmitation_image2.png)
+![Alt Text](./Images/limitation_image2.png)
 
-4.4 Result Analysis
+# 4.4 Result Analysis
 We checkout performance analysis for various of Kernel.
+![Alt Text](./Images/resultkernel.png)
+![Alt Text](./Images/1kernel.png)
+![Alt Text](./Images/3kenel.png)
+![Alt Text](./Images/5kernel.png)
+We trained our model using kernel sizes of 1x1, 3x3, and 5x5, and found that the model
+achieved the highest accuracy with 98 percentage at 3x3 kernel size. Therefore, we selected
+this model as our final one.
+
+# Chapter 5 Future Recommendation and Conclusion
+5.1 Future Recommendations
+Here are some future recommendations for the project "Object Classification Using Lightweight
+CNN ":
+1. Use Data Augmentation: One way to improve the model’s accuracy is to use data augmentation techniques such as rotation, flipping, and zooming of images. This technique
+can help the model learn more robust features and reduce overfitting.
+2. Test on Larger Datasets: While the Cifar10 dataset is useful for testing lightweight
+models, it would be interesting to test the model on larger datasets such as Cifar100,
+ImageNet, or COCO. This would provide a better understanding of the model’s ability
+to generalize to different datasets and identify objects in more complex scenes.
+5.2 Conclusion
+The project "Object Classification Using Lightweight CNN " aimed to develop a deep learning model for classifying objects in images using the Cifar10 dataset. The project used a
+lightweight convolutional neural network (CNN) architecture and trained it on the Cifar10
+dataset, which contains 60,000 32x32 color images in 10 classes.
+After training and evaluating the model, the results showed that the architecture achieved an
+accuracy of 98 percent on the test set, which is a reasonably good result considering the simplicity of the network. The project also analyzed the training and validation accuracy and loss
+curves and concluded that the model did not suffer from overfitting.
+Overall, the project successfully demonstrated the effectiveness of using lightweight CNN
+architectures for object classification tasks, particularly in situations where computational resources are limited. The project could be extended by testing the model on other datasets or
+by exploring other lightweight CNN architectures to improve accuracy further.
+
+
 
 
 
