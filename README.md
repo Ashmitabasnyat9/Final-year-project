@@ -132,7 +132,7 @@ The model chosen for this system is “WaterFall model”. This is a simple proj
 well-defined process and the requirement. The various steps of the waterfall model is followed
 throughout the whole project. This model is understood and incorporate in this project.Very
 less user is involved during the development of these projects. Thus, this system is developed
-![Alt Text](./waterfall_model.png)
+![Alt Text](./Images/waterfall_model.png)
 according to the Waterfall model. The various Steps of the Waterfall is shown in figure 1.1
 The "Object Classification Using Light Weight CNN" project can be developed using the waterfall model, which is a sequential and linear approach to software development. The following are the main phases of the waterfall model that can be applied to this project:
 1. Requirements gathering:
@@ -186,7 +186,7 @@ positive values unchanged [4]. This activation function is computationally effic
 has been shown to improve the convergence of the model.ReLU is an important component in the "Object Classification Using CNN". It helps to improve the accuracy of
 predictions, speed up computation time, and provide a non-linear decision boundary for
 the model to learn from.
-![Alt Text](./relu_graph.png)
+![Alt Text](./Images/relu_graph.png)
 
 # 2.1.4 Dataset Description
 The CIFAR-10 dataset (Canadian Institute for Advanced Research) is a collection of images
