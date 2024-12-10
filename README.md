@@ -59,7 +59,6 @@ This repository demonstrates real-time object detection/image classification usi
 5.4 Training Accuracy and Loss (1×1 Kernel)  
 5.5 Training Accuracy and Loss (3×3 Kernel)  
 5.6 Training Accuracy and Loss (5×5 Kernel)  
-5.7 Confusion Matrix  
 6.1 Homepage Layout  
 6.2 Image Upload Page  
 
